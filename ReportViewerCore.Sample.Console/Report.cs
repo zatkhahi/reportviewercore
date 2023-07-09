@@ -17,5 +17,11 @@ namespace ReportViewerCore
 			report.DataSources.Add(new ReportDataSource("Items", items));
 			report.SetParameters(parameters);
 		}
+
+		public static void Test2(LocalReport report)
+		{
+			using var fs = new FileStream("myimage.rdl", FileMode.Open);
+			report.LoadReportDefinition(fs);
+		}
 	}
 }

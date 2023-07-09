@@ -5,3 +5,6 @@ obj
 *.nupkg
 *.exe
 *.bat
+
+publish/
+publish-linux/

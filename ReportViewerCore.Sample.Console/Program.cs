@@ -9,9 +9,13 @@ namespace ReportViewerCore.Console
 		static void Main(string[] args)
 		{
 			var report = new LocalReport();
-			Report.Load(report);
-			var pdf = report.Render("PDF");
-			File.WriteAllBytes("report.pdf", pdf);
+			// Report.Load(report);
+			Report.Test2(report);
+			var pdf = report.Render("HTML5");
+			File.WriteAllBytes("report.html", pdf);
+
+			pdf = report.Render("EXCELOPENXML");
+			File.WriteAllBytes("report.xlsx", pdf);
 		}
 	}
 }

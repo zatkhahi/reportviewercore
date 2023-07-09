@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ReportViewerCore.Sample.Console": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
